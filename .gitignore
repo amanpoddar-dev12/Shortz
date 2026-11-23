@@ -1,0 +1,47 @@
+# Secrets & Credentials (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+client_secret.json
+token.json
+*.pem
+*.key
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated Media, Workspace & Artifacts
+workspace/
+output/
+downloads/
+*.mp4
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.ass
+*.srt
+*.jpg
+*.jpeg
+*.png
+
+# Gradio & Jupyter
+.gradio/
+.ipynb_checkpoints/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

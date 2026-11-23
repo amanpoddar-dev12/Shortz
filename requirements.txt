@@ -1,0 +1,38 @@
+# OpenViralClip - 100% Zero-Cost AI Viral Clip Generator
+# Core Data & Configuration
+pydantic==2.10.6
+python-dotenv==1.0.1
+PyYAML==6.0.2
+
+# Video Ingestion
+yt-dlp==2025.2.19
+
+# Transcription (Local/Colab GPU + Groq Free API)
+faster-whisper==1.1.1
+groq==0.18.0
+# Optional for speaker diarization / forced alignment on Colab:
+# whisperx==3.3.1
+
+# Viral Moment & Metadata LLM (Google AI Studio Free Tier + Local Ollama)
+google-genai==1.5.0
+httpx==0.28.1
+
+# Smart Reframing & Face Tracking
+mediapipe==0.10.21
+opencv-python-headless==4.11.0.86
+numpy==1.26.4
+
+# Subtitle Generation & Thumbnail Rendering
+pysubs2==1.8.0
+Pillow==11.1.0
+
+# YouTube Data API v3 Auto-Uploader
+google-api-python-client==2.162.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+
+# Web UI (Local + Free Colab Gradio Live Link)
+gradio==5.20.0
+
+# Testing & Quality
+pytest==8.3.5

@@ -1,0 +1,50 @@
+# OpenViralClip Configuration
+# Copy to config.yaml to customize defaults.
+
+clip_durations:
+  - 30
+  - 60
+  - 90
+
+aspect_ratios:
+  - "9:16"
+  - "1:1"
+  - "16:9"
+
+max_clips_per_bucket: 2
+
+# Transcription: "faster-whisper" (local/Colab GPU), "whisperx", or "groq"
+transcription_engine: "faster-whisper"
+whisper_model: "large-v3-turbo"
+
+# LLM Analysis: "gemini" (Google AI Studio Free Tier) or "ollama" (local)
+llm_provider: "gemini"
+gemini_model: "gemini-2.5-flash"
+ollama_model: "qwen2.5:14b"
+ollama_base_url: "http://localhost:11434"
+
+# Smart Reframing & Face Tracking
+crop_smoothing_window: 15
+enable_split_screen: true
+
+# Native FFmpeg Rendering
+ffmpeg_crf: 18
+ffmpeg_preset: "medium"
+
+# YouTube Auto-Uploader Defaults
+youtube_privacy_status: "private" # "private", "unlisted", or "public"
+youtube_category_id: "22"         # 22 = People & Blogs
+
+# Animated Word-by-Word ASS Subtitle Styling (ASS BGR Hex: &H00BBGGRR)
+subtitles:
+  font_name: "Montserrat"
+  font_size: 68
+  primary_color: "&H00FFFFFF"     # White
+  highlight_color: "&H0000FFFF"   # Yellow (active spoken word)
+  outline_color: "&H00000000"     # Black border
+  outline_width: 4
+  shadow_depth: 2
+  words_per_line: 3
+  uppercase: true
+  alignment: 2                    # Bottom-center
+  margin_v: 260
